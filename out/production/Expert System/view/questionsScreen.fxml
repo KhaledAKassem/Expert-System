@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import org.kairos.layouts.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorPane" prefHeight="649.0" prefWidth="1301.0" stylesheets="@../style/StyleSheet.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.questionController">
+   <children>
+      <AnchorPane layoutX="601.0" layoutY="139.0" opacity="0.9" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3e67a2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <RecyclerView fx:id="recycleView" layoutX="6.0" layoutY="-1.0" prefHeight="560.0" prefWidth="1301.0" style="-fx-background-color: #ffffff00;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <GridPane layoutX="464.0" layoutY="580.0" prefHeight="55.0" prefWidth="373.0" AnchorPane.bottomAnchor="14.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton id="submitButton" onAction="#submitAction" prefHeight="64.0" prefWidth="201.0" ripplerFill="WHITE" style="-fx-background-color: #aec900; -fx-background-radius: 50px 0px 0px 50px;" text="Submit" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="resetButton" prefHeight="64.0" prefWidth="201.0" ripplerFill="WHITE" style="-fx-background-color: #01b863; -fx-background-radius: 0px 50px 50px 0px;" text="Reset" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <effect>
+                  <DropShadow color="#3c3c3c" />
+               </effect>
+            </GridPane>
+         </children></AnchorPane>
+      <AnchorPane fx:id="alertPane" layoutX="480.0" layoutY="39.0" prefHeight="494.0" prefWidth="341.0" style="-fx-background-color: #fff;">
+         <effect>
+            <DropShadow color="#434343" />
+         </effect>
+         <children>
+            <AnchorPane prefHeight="174.0" prefWidth="341.0" style="-fx-background-color: #2dd784;">
+               <children>
+                  <ImageView fitHeight="102.0" fitWidth="88.0" layoutX="127.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../src/emoji.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="99.0" layoutY="392.0" onAction="#OkAction" prefHeight="37.0" prefWidth="146.0" style="-fx-background-radius: 50px; -fx-border-color: #2dd784; -fx-border-radius: 50px;" text="Ok" textFill="#2dd784" />
+            <Label alignment="CENTER" layoutX="117.0" layoutY="210.0" prefHeight="37.0" prefWidth="109.0" text="Awesome!" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="messageLB" alignment="CENTER" layoutX="4.0" layoutY="264.0" prefHeight="102.0" prefWidth="333.0" text="your result has been uploaded successfuly" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Franklin Gothic Book" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

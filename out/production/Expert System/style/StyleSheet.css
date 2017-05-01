@@ -1,0 +1,47 @@
+.jfx-snackbar-content{
+    -fx-background-color: #00bf8a;
+}
+
+.jfx-snackbar-toast{
+    -fx-alignment: center;
+    -fx-text-fill:  #fff;
+}
+
+#anchorPane{
+    -fx-background-image: url("/src/lee-campbell-86958.jpg");
+}
+
+#comboBox  .cell{
+    -fx-pref-height: 30px;
+    -fx-alignment: center;
+    -fx-text-fill: #918f90;
+    -fx-font-size: 15px;
+}
+
+#comboBox  :hover{
+    -fx-background-color: #bfe8f0;
+    -fx-alignment: center;
+    -fx-text-fill: #fffaea;
+    -fx-font-size: 15px;
+}
+
+#submitButton :hover{
+    -fx-background-color: #0c8ecb;
+    -fx-background-radius:  50px 0px 0px 50px;
+}
+
+#resetButton :hover{
+    -fx-background-color: #0c8ecb;
+    -fx-background-radius:  0px 50px 50px 0px;
+}
+
+
+
+#goBTN :hover{
+    -fx-background-color: #ffc32f;
+    -fx-background-radius:  0px 50px 50px 0px;
+}
+
+
+
+

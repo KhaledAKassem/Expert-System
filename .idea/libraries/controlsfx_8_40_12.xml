@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="controlsfx-8.40.12">
+    <CLASSES>
+      <root url="jar://E:/JAVAFX PROJECTS/controlsfx-8.40.12.jar!/" />
+      <root url="jar://E:/JAVAFX PROJECTS/kairos-all-0.5.jar!/" />
+      <root url="jar://E:/JAVAFX PROJECTS/jfoenix.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
